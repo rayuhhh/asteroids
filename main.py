@@ -40,10 +40,10 @@ def main():
             if a.collision_check(player):
                 print("Game over!")
                 sys.exit()
-                
+
             for s in shots:
                 if a.collision_check(s):
-                    a.kill()
+                    a.split()
                     s.kill()
 
         screen.fill("black")
